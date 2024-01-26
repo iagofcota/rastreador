@@ -52,7 +52,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function Navbar({ personagemFilter }) {
-  console.log(personagemFilter);
   return (
     <Box sx={{ flexGrow: 1, marginBottom:"3em" }}>
       <AppBar position="static" sx={{backgroundColor:"black"}} >
