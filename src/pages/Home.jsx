@@ -39,7 +39,7 @@ const Home = () => {
       <Container maxWidth="false">
         <Grid container spacing={3}>
           {personagens.map((personagem, key) => ( //inseri key aqui e na linha debaixo para tirar erro da key
-          <Grid item xs={12} sm={5} md={4} lg={2.4} key={key}>{/* ocupação da tela, divide por 12, ai mostra o quanto vai aparecer: ex:md={4} 12/4 = 3 cards */} 
+          <Grid item xs={12} sm={4} md={3} lg={2.4} key={key}>{/* ocupação da tela, divide por 12, ai mostra o quanto vai aparecer: ex:md={4} 12/4 = 3 cards */} 
           <PersonagemCard name={personagem.name} ki={personagem.ki} race={personagem.race} image={personagem.image} imageHeight={500}/>
         </Grid> 
           ))}

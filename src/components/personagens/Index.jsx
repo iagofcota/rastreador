@@ -12,7 +12,12 @@ export default function PersonagemCard({ name, ki, race, image, imageHeight}) {
     <Card sx={{ maxWidth: 345, maxHeight: '100%', position: 'relative', backgroundColor:'#4e4f54' }}>
       <CardActionArea sx={{backgroundImage: 'url("https://img.freepik.com/vetores-gratis/design-de-estilo-gradiente-simples-minimalista-de-luxo-de-fundo-novo_483537-1848.jpg?w=740&t=st=1706042701~exp=1706043301~hmac=906a762bc093f2cc3b5d20eeb695dbf32d21fac043b7081ebcedb818d85eaba8")',
       position: 'relative', // Adicionado
-      height: imageHeight, }}>
+      height: imageHeight,
+      // width: '100%',
+      // display: 'flex',
+      // justifyContent: 'center',
+       //alignItems: 'center', 
+       }}>
       
       <CardMedia
           component="img"
@@ -22,7 +27,8 @@ export default function PersonagemCard({ name, ki, race, image, imageHeight}) {
           image={image}
           alt="imagens personagens"
           sx={{
-            width:210,
+            width: 'auto',
+            maxHeight: '100%',
             position: 'absolute', // Adicionado
             top: 20, // Adicionado
             left: 0, // Adicionado
@@ -30,7 +36,6 @@ export default function PersonagemCard({ name, ki, race, image, imageHeight}) {
             bottom: 0, // Adicionado
             margin: 'auto', // Adicionado
             zIndex: 1, // Adicionado
-            //marginTop: 'auto',
             transition: 'transform 0.3s', // Adicionando uma transição suave
             '&:hover': {
               transform: 'scale(1.1)', // Zoom de 10% no hover
