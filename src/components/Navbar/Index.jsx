@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import { LogoDev } from '@mui/icons-material';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -56,18 +57,19 @@ export default function Navbar({ personagemFilter }) {
     <Box sx={{ flexGrow: 1, marginBottom:"3em" }}>
       <AppBar position="static" sx={{backgroundColor:"black"}} >
         <Toolbar>
+          
           <Box display="flex" justifyContent="space-between" width='100%'/*coloquei esse box para mexer na logo, o widht mandou o pesquisar para direita */> 
-          <Box component="img" src="/assets/logo.png" height="3em"  />
+            <Box component="img" src="/assets/logo.png" height="3em" />
             
-            <Search onChange={(e) => personagemFilter(e.target.value) } /* tudo que digitar vai pra onchage*/>
-              <SearchIconWrapper>
-                <SearchIcon />
-              </SearchIconWrapper>
-              <StyledInputBase
-                placeholder="Pesquisar…"
-                inputProps={{ 'aria-label': 'search' }}
-              />
-            </Search>
+              <Search onChange={(e) => personagemFilter(e.target.value) } /* tudo que digitar vai pra onchage*/>
+                <SearchIconWrapper>
+                  <SearchIcon />
+                </SearchIconWrapper>
+                <StyledInputBase
+                  placeholder="Pesquisar…"
+                  inputProps={{ 'aria-label': 'search' }}
+                />
+              </Search>
           </Box>
         </Toolbar>
       </AppBar>
