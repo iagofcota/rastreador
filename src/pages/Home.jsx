@@ -3,8 +3,6 @@ import Navbar from '../components/Navbar/Index'
 import { Container, Grid } from '@mui/material'
 import axios from 'axios'
 import PersonagemCard from '../components/personagens/Index'
-import { Height } from '@mui/icons-material'
-import Testee from '../components/teste/id2'
 
 const Home = () => {
   const [personagens, setPersonagens] = useState([])
