@@ -57,7 +57,7 @@ export default function Navbar({ personagemFilter }) {
       <AppBar position="static" sx={{backgroundColor:"black"}} >
         <Toolbar>
           <Box display="flex" justifyContent="space-between" width='100%'/*coloquei esse box para mexer na logo, o widht mandou o pesquisar para direita */> 
-          <Box component="img" src="/assets/logo.png" height="3em"  />
+          <Box component="img" src="https://logodownload.org/wp-content/uploads/2017/12/dragon-ball-super-logo.png" height="3em"  />
             
             <Search onChange={(e) => personagemFilter(e.target.value) } /* tudo que digitar vai pra onchage*/>
               <SearchIconWrapper>
